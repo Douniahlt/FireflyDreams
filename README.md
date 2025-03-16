@@ -34,12 +34,17 @@ Téléchargez le projet FireflyDream.
 Ouvrez le projet dans l'éditeur Godot.
 Explorez le code source, les ressources, et jouez avec le moteur du jeu.
 
+#### Avec Executable:
+
+    chmod +x Escape_game_lucioles.x86_64 
+    ./Escape_game_lucioles.x86_64 
+
 ### Assignation des touches :
 
-Z : Monter
-S : Descendre 
-D : Aller à droite
-Q : Aller à gauche
+Flèche du haut: Monter
+Flèche du bas: Descendre 
+Flèche de droite: Aller à droite
+Flèche de gauche: Aller à gauche
 Espace : Sauter 
 E : Descendre l'échelle
 
