@@ -1,7 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1742051934
-default_env.tres::Environment::9160309753669153701::1742052017::0::1::::<><>::
-export_presets.cfg::TextFile::-1::1639850863::0::1::::<><>::
+::res://::1742131895
+default_env.tres::Environment::9160309753669153701::1742086736::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1742086405::0::1::::<><>::
+nv1.gd::GDScript::-1::1742083751::0::1::::<>Node2D<>::
 ::res://asset/::1639781313
 ::res://asset/Asset lumiere/::1742051891
 light.png::CompressedTexture2D::2738132221440969408::1637054913::1742051891::1::::<><>::
@@ -26,7 +27,7 @@ luciole2.png::CompressedTexture2D::6190930949752413468::1638877652::1742051890::
 luciole3.png::CompressedTexture2D::5570884186569774267::1638877654::1742051890::1::::<><>::
 luciole 1.png::CompressedTexture2D::8849844956070424509::1638877644::1742051890::1::::<><>::
 luciole.png::CompressedTexture2D::582478358017980204::1638877648::1742051891::1::::<><>::
-::res://asset/perso/::1742051891
+::res://asset/perso/::1742052418
 a l'arret.png::CompressedTexture2D::4258854255883530225::1636813417::1742052418::1::::<><>::
 descendre echelle.png::CompressedTexture2D::7448179739004191843::1639779776::1742051890::1::::<><>::
 marche cote.png::CompressedTexture2D::7960956980027439598::1639779287::1742051890::1::::<><>::
@@ -40,25 +41,42 @@ Sprite-0002.png::CompressedTexture2D::1322001470096762688::1638885163::174205189
 Luciole.mp3::AudioStreamMP3::5441250667493479259::1639317814::1742051890::1::::<><>::
 projet_godot_v1.mp3::AudioStreamMP3::4267316878427495755::1639390557::1742051890::1::::<><>::
 projet_godot_v2.mp3::AudioStreamMP3::7555895699022921184::1639390563::1742051890::1::::<><>::
-::res://scenes/::1742051934
+::res://scenes/::1742086736
+cinematique_fin.gd::GDScript::-1::1742085897::0::1::::<>Node2D<>::
+cinematique_fin.tscn::PackedScene::3487848312301840419::1742086736::0::1::::<><>::res://scenes/cinematique_fin.gd<>uid://cd508ddlhgs1l::::res://asset/Cinématique/cinématique fin.png<>uid://x7baoj2ujyiw::::res://asset/Bouton start/exit.png
 derniere salle.tscn::PackedScene::-1::1742051851::0::1::::<><>::
-Fin Game Over.tscn::PackedScene::-1::1742051851::0::1::::<><>::
-Fin win.tscn::PackedScene::-1::1742051851::0::1::::<><>::res://asset/Fond/fin win.png
+Fin Game Over.gd::GDScript::-1::1742083071::0::1::::<>Area2D<>::
+Fin Game Over.tscn::PackedScene::8161141211949470291::1742086061::0::1::::<><>::res://scenes/Fin Game Over.gd<>uid://da4w7r10l3kxf::::res://asset/Cinématique/cinématique fin 2.png
 Flèche de luciole.tscn::PackedScene::-1::1742051851::0::1::::<><>::res://asset/luciole/luciole 1.png<>res://asset/Asset lumiere/light.png
-Game over.tscn::PackedScene::-1::1742051851::0::1::::<><>::
 Lot de luciole 1.tscn::PackedScene::-1::1742051851::0::1::::<><>::res://asset/luciole/luciole.png<>res://asset/luciole/luciole 1.png<>res://asset/luciole/luciole2.png<>res://asset/luciole/luciole3.png<>res://asset/Asset lumiere/light.png
 Lot de luciole 2.tscn::PackedScene::-1::1742051851::0::1::::<><>::res://asset/luciole/luciole.png<>res://asset/luciole/luciole 1.png<>res://asset/luciole/luciole2.png<>res://asset/luciole/luciole3.png<>res://asset/Asset lumiere/light.png
 Lot de luciole 3.tscn::PackedScene::-1::1742051851::0::1::::<><>::res://asset/luciole/luciole.png<>res://asset/luciole/luciole 1.png<>res://asset/luciole/luciole2.png<>res://asset/luciole/luciole3.png<>res://asset/Asset lumiere/light.png
+lot_lucioles2.tscn::PackedScene::6452837244356362232::1742083620::0::1::::<><>::uid://ikfllqepvcpo::::res://asset/luciole/luciole.png<>uid://clmtwb3ahul84::::res://asset/luciole/luciole3.png<>uid://dyc6whneaxcb2::::res://asset/luciole/luciole 1.png<>uid://cug6y03udsvtc::::res://asset/luciole/luciole2.png<>uid://bfamvxd3vt7xk::::res://asset/Asset lumiere/light.png
+lot_lucioles3.tscn::PackedScene::7134108073636658258::1742083620::0::1::::<><>::uid://ikfllqepvcpo::::res://asset/luciole/luciole.png<>uid://dyc6whneaxcb2::::res://asset/luciole/luciole 1.png<>uid://cug6y03udsvtc::::res://asset/luciole/luciole2.png<>uid://clmtwb3ahul84::::res://asset/luciole/luciole3.png<>uid://bfamvxd3vt7xk::::res://asset/Asset lumiere/light.png
+lot_lucioles_fix.tscn::PackedScene::2183197832798030843::1742083620::0::1::::<><>::uid://ikfllqepvcpo::::res://asset/luciole/luciole.png<>uid://dyc6whneaxcb2::::res://asset/luciole/luciole 1.png<>uid://cug6y03udsvtc::::res://asset/luciole/luciole2.png<>uid://clmtwb3ahul84::::res://asset/luciole/luciole3.png<>uid://bfamvxd3vt7xk::::res://asset/Asset lumiere/light.png
 luciole5.tscn::PackedScene::-1::1742051851::0::1::::<><>::res://asset/luciole/luciole3.png<>res://asset/Asset lumiere/light.png
-Luciole 1.tscn::PackedScene::-1::1742051851::0::1::::<><>::res://asset/Asset lumiere/light.png<>res://asset/luciole/luciole 1.png
+Luciole 1.tscn::PackedScene::1775681894093890531::1742054655::0::1::::<><>::uid://bfamvxd3vt7xk::::res://asset/Asset lumiere/light.png<>uid://dyc6whneaxcb2::::res://asset/luciole/luciole 1.png
 Luciole 2.tscn::PackedScene::-1::1742051851::0::1::::<><>::res://asset/Asset lumiere/light.png<>res://asset/luciole/luciole2.png
 Luciole 3.tscn::PackedScene::-1::1742051851::0::1::::<><>::res://asset/Asset lumiere/light.png<>res://asset/luciole/luciole3.png
 Luciole 4.tscn::PackedScene::-1::1742051851::0::1::::<><>::res://asset/Asset lumiere/light.png<>res://asset/luciole/luciole3.png
-Main.tscn::PackedScene::8512732358574194577::1742051934::0::1::::<><>::res://scenes/Personnage.tscn<>uid://bfamvxd3vt7xk::::res://asset/Asset lumiere/light.png<>res://scenes/Lot de luciole 1.tscn<>res://scenes/Lot de luciole 2.tscn<>res://scenes/Lot de luciole 3.tscn<>res://scenes/Porte2.tscn<>uid://clvrvj7f0472u::::res://asset/Fond/fond3.png<>res://scenes/Flèche de luciole.tscn<>res://scenes/Fin win.tscn<>res://scenes/Fin Game Over.tscn<>uid://cd508ddlhgs1l::::res://asset/Cinématique/cinématique fin.png<>uid://dco8rljuk0gtk::::res://asset/Fond/fond3 win fermée.png<>res://scenes/luciole5.tscn<>uid://x7baoj2ujyiw::::res://asset/Bouton start/exit.png<>res://scenes/derniere salle.tscn<>res://scenes/Game over.tscn<>uid://bveddhx38wk6n::::res://asset/Fond/fond 1.png<>uid://cvjvu1yfhr6vm::::res://asset/Fond/fond 2.png<>uid://da4w7r10l3kxf::::res://asset/Cinématique/cinématique fin 2.png<>uid://m1ql3gjn41yh::::res://asset/Bouton start/start1.png<>uid://b12ec54qagylf::::res://asset/Son et musique/projet_godot_v1.mp3<>res://scenes/Luciole 1.tscn<>res://scenes/Luciole 4.tscn<>res://scenes/Luciole 2.tscn<>res://scenes/Luciole 3.tscn<>res://scenes/Porte.tscn<>uid://bwrmp58remtdb::::res://asset/Cinématique/pixel art cinématique 1-Recovered.png<>uid://cxkpl0jl7qxfp::::res://asset/Bouton start/start.png
-Personnage.tscn::PackedScene::3000901649565911603::1742052017::0::1::::<><>::uid://kvgbfsl4po5k::::res://asset/perso/saut.png<>res://scripts/Personnage.gd<>uid://dlol2e5m0xihy::::res://asset/perso/marche cote.png<>uid://by8blnxfwhn4t::::res://asset/perso/marche de dos.png<>uid://cg6lng0r3pvvx::::res://asset/perso/marche vers le bas.png<>uid://b1xaybynlmf6p::::res://asset/perso/a l'arret.png<>uid://ded7oxruo6rw2::::res://asset/perso/descendre echelle.png<>uid://bfamvxd3vt7xk::::res://asset/Asset lumiere/light.png
-Porte2.tscn::PackedScene::-1::1742051851::0::1::::<><>::res://asset/porte/porte 2.png
-Porte.tscn::PackedScene::-1::1742051851::0::1::::<><>::res://asset/porte/Sprite2D-0002.png
-Main.gd::GDScript::-1::1742052207::0::1::::<>Node2D<>::
+luciole.gd::GDScript::-1::1742056479::0::1::::<>Area2D<>::
+Lucioles.tscn::PackedScene::6656961797722991336::1742083751::0::1::::<><>::res://scenes/luciole.gd<>uid://dyc6whneaxcb2::::res://asset/luciole/luciole 1.png<>uid://bfamvxd3vt7xk::::res://asset/Asset lumiere/light.png<>uid://cug6y03udsvtc::::res://asset/luciole/luciole2.png<>uid://clmtwb3ahul84::::res://asset/luciole/luciole3.png
+Main.gd::GDScript::-1::1742085087::0::1::::<>Node2D<>::
+Main.tscn::PackedScene::8512732358574194577::1742086060::0::1::::<><>::res://scenes/Main.gd<>uid://m1ql3gjn41yh::::res://asset/Bouton start/start1.png<>uid://bwrmp58remtdb::::res://asset/Cinématique/pixel art cinématique 1-Recovered.png<>uid://cxkpl0jl7qxfp::::res://asset/Bouton start/start.png
+MusicManager.tscn::PackedScene::7305379166307919969::1742086061::0::1::::<><>::res://scripts/MusicManager.gd<>uid://b12ec54qagylf::::res://asset/Son et musique/projet_godot_v1.mp3
+niveau1.tscn::PackedScene::8314879783571327594::1742086060::0::1::::<><>::res://nv1.gd<>uid://bveddhx38wk6n::::res://asset/Fond/fond 1.png<>uid://bfamvxd3vt7xk::::res://asset/Asset lumiere/light.png<>uid://o0rtqphyv0x4::::res://scenes/Porte.tscn<>uid://c13xgnttokeh1::::res://scenes/Lucioles.tscn<>uid://bi0wn87xetyp4::::res://scenes/Personnage.tscn
+nv2_mieu.gd::GDScript::-1::1742085705::0::1::::<>Node2D<>::
+nv2_mieu.tscn::PackedScene::7122161765925272576::1742086083::0::1::::<><>::uid://cvjvu1yfhr6vm::::res://asset/Fond/fond 2.png<>res://scenes/nv2_mieu.gd<>uid://c13xgnttokeh1::::res://scenes/Lucioles.tscn<>uid://cx62j0mhwwelc::::res://scenes/lot_lucioles2.tscn<>uid://dbk16l02doiuu::::res://asset/porte/porte 2.png<>uid://6ds7jo0gt148::::res://scenes/lot_lucioles_fix.tscn<>uid://c8v2ynvfwr1xu::::res://scenes/lot_lucioles3.tscn<>uid://bi0wn87xetyp4::::res://scenes/Personnage.tscn
+nv3.gd::GDScript::-1::1742086060::0::1::::<>Node2D<>::
+nv3.tscn::PackedScene::1783685452433947866::1742086061::0::1::::<><>::uid://clvrvj7f0472u::::res://asset/Fond/fond3.png<>res://scenes/nv3.gd<>uid://bfamvxd3vt7xk::::res://asset/Asset lumiere/light.png<>uid://dco8rljuk0gtk::::res://asset/Fond/fond3 win fermée.png<>res://scenes/Flèche de luciole.tscn<>uid://bi0wn87xetyp4::::res://scenes/Personnage.tscn
+nv4.gd::GDScript::-1::1742086060::0::1::::<>Node2D<>::
+nv4.tscn::PackedScene::6393917150436208811::1742086061::0::1::::<><>::uid://cvjvu1yfhr6vm::::res://asset/Fond/fond 2.png<>res://scenes/nv4.gd<>uid://bi0wn87xetyp4::::res://scenes/Personnage.tscn
+nv5.gd::GDScript::-1::1742086060::0::1::::<>Node2D<>::
+nv5.tscn::PackedScene::6832736885565238126::1742086061::0::1::::<><>::res://scenes/nv5.gd<>uid://bveddhx38wk6n::::res://asset/Fond/fond 1.png<>uid://bfamvxd3vt7xk::::res://asset/Asset lumiere/light.png<>uid://bi0wn87xetyp4::::res://scenes/Personnage.tscn
+Personnage.tscn::PackedScene::3000901649565911603::1742086060::0::1::::<><>::uid://kvgbfsl4po5k::::res://asset/perso/saut.png<>res://scripts/Personnage.gd<>uid://dlol2e5m0xihy::::res://asset/perso/marche cote.png<>uid://by8blnxfwhn4t::::res://asset/perso/marche de dos.png<>uid://cg6lng0r3pvvx::::res://asset/perso/marche vers le bas.png<>uid://b1xaybynlmf6p::::res://asset/perso/a l'arret.png<>uid://ded7oxruo6rw2::::res://asset/perso/descendre echelle.png
+Porte2.tscn::PackedScene::2765107122009411003::1742083620::0::1::::<><>::uid://dbk16l02doiuu::::res://asset/porte/porte 2.png
+Porte.tscn::PackedScene::1035320237641814359::1742083751::0::1::::<><>::
 Start.tscn::PackedScene::-1::1742051851::0::1::::<><>::res://asset/Bouton start/start1.png<>res://asset/Bouton start/start.png
-::res://scripts/::1639850468
-Personnage.gd::GDScript::-1::1742051998::0::1::::<>CharacterBody2D<>::
+::res://scripts/::1742085368
+MusicManager.gd::GDScript::-1::1742085368::0::1::::<>Node<>::
+Personnage.gd::GDScript::-1::1742080761::0::1::::<>CharacterBody2D<>::
