@@ -41,14 +41,12 @@ Explorez le code source, les ressources, et jouez avec le moteur du jeu.
 
 ### Assignation des touches :
 
-Flèche du haut: Monter
-Flèche du bas: Descendre 
-Flèche de droite: Aller à droite
-Flèche de gauche: Aller à gauche
-Espace : Sauter 
-E : Descendre l'échelle
-
-Le saut est implémenter dans le projet, et est mis dans le scrip sauf qu'on ne l'a pas relié au reste du script car l'action se décallait et qu'on arrivaient pas à la faire avancer sans qu'elle revienne à sa position initiale. Donc quand on fait la touche espace il ne se passe rien, mais l'animation est quand même crée.
+- 🔼 **Flèche du haut** : Monter  
+- 🔽 **Flèche du bas** : Descendre  
+- ▶️ **Flèche de droite** : Aller à droite  
+- ◀️ **Flèche de gauche** : Aller à gauche  
+- ⏹ **Espace** : Sauter (non fonctionnel dans cette version)  
+- 🪜 **E** : Descendre l’échelle  
 
 
 ## Crédits
