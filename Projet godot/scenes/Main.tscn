@@ -1,0 +1,171 @@
+[gd_scene load_steps=20 format=3 uid="uid://dtjvptx425xqv"]
+
+[ext_resource type="Script" path="res://scenes/Main.gd" id="1_txrsl"]
+[ext_resource type="Texture2D" uid="uid://m1ql3gjn41yh" path="res://asset/Bouton start/start1.png" id="39"]
+[ext_resource type="Texture2D" uid="uid://bwrmp58remtdb" path="res://asset/Cinématique/pixel art cinématique 1-Recovered.png" id="47"]
+[ext_resource type="Texture2D" uid="uid://cxkpl0jl7qxfp" path="res://asset/Bouton start/start.png" id="49"]
+
+[sub_resource type="AtlasTexture" id="61"]
+atlas = ExtResource("47")
+region = Rect2(0, 0, 1030, 998)
+
+[sub_resource type="AtlasTexture" id="62"]
+atlas = ExtResource("47")
+region = Rect2(1030, 0, 1030, 998)
+
+[sub_resource type="AtlasTexture" id="63"]
+atlas = ExtResource("47")
+region = Rect2(2060, 0, 1030, 998)
+
+[sub_resource type="AtlasTexture" id="64"]
+atlas = ExtResource("47")
+region = Rect2(3090, 0, 1030, 998)
+
+[sub_resource type="AtlasTexture" id="65"]
+atlas = ExtResource("47")
+region = Rect2(4120, 0, 1030, 998)
+
+[sub_resource type="AtlasTexture" id="66"]
+atlas = ExtResource("47")
+region = Rect2(5150, 0, 1030, 998)
+
+[sub_resource type="AtlasTexture" id="67"]
+atlas = ExtResource("47")
+region = Rect2(6180, 0, 1030, 998)
+
+[sub_resource type="AtlasTexture" id="68"]
+atlas = ExtResource("47")
+region = Rect2(7210, 0, 1030, 998)
+
+[sub_resource type="AtlasTexture" id="69"]
+atlas = ExtResource("47")
+region = Rect2(8240, 0, 1030, 998)
+
+[sub_resource type="AtlasTexture" id="70"]
+atlas = ExtResource("47")
+region = Rect2(9270, 0, 1030, 998)
+
+[sub_resource type="AtlasTexture" id="71"]
+atlas = ExtResource("47")
+region = Rect2(10300, 0, 1030, 998)
+
+[sub_resource type="AtlasTexture" id="72"]
+atlas = ExtResource("47")
+region = Rect2(11330, 0, 1030, 998)
+
+[sub_resource type="AtlasTexture" id="73"]
+atlas = ExtResource("47")
+region = Rect2(12360, 0, 1030, 998)
+
+[sub_resource type="AtlasTexture" id="74"]
+atlas = ExtResource("47")
+region = Rect2(13390, 0, 1030, 998)
+
+[sub_resource type="SpriteFrames" id="3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("61")
+}, {
+"duration": 1.0,
+"texture": SubResource("62")
+}, {
+"duration": 1.0,
+"texture": SubResource("63")
+}, {
+"duration": 1.0,
+"texture": SubResource("64")
+}, {
+"duration": 1.0,
+"texture": SubResource("65")
+}, {
+"duration": 1.0,
+"texture": SubResource("66")
+}, {
+"duration": 1.0,
+"texture": SubResource("67")
+}, {
+"duration": 1.0,
+"texture": SubResource("68")
+}, {
+"duration": 1.0,
+"texture": SubResource("69")
+}, {
+"duration": 1.0,
+"texture": SubResource("70")
+}, {
+"duration": 1.0,
+"texture": SubResource("71")
+}, {
+"duration": 1.0,
+"texture": SubResource("72")
+}, {
+"duration": 1.0,
+"texture": SubResource("73")
+}, {
+"duration": 1.0,
+"texture": SubResource("74")
+}],
+"loop": false,
+"name": &"Cinématique début",
+"speed": 5.0
+}]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_txrsl")
+
+[node name="restart" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1816.0
+offset_top = 10558.0
+offset_right = 2121.0
+offset_bottom = 10737.0
+
+[node name="restart" type="TextureButton" parent="restart"]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 58.0
+offset_right = 247.0
+offset_bottom = 140.0
+texture_normal = ExtResource("49")
+texture_hover = ExtResource("39")
+
+[node name="Label" type="Label" parent="restart"]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 18.0
+offset_right = 281.0
+offset_bottom = 53.0
+text = "Some Lucioles are missing
+Find them"
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Cinématique du début" type="AnimatedSprite2D" parent="Control"]
+position = Vector2(587, 310)
+scale = Vector2(0.547573, 0.601592)
+sprite_frames = SubResource("3")
+animation = &"Cinématique début"
+
+[node name="Start" type="TextureButton" parent="Control"]
+layout_mode = 0
+offset_top = 42.0
+offset_right = 60.0
+offset_bottom = 72.0
+scale = Vector2(19.165, 19.165)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("49")
+texture_hover = ExtResource("39")
+
+[connection signal="pressed" from="restart/restart" to="." method="_on_restart_pressed"]
+[connection signal="animation_finished" from="Control/Cinématique du début" to="." method="_on_cinématique_du_début_animation_finished"]
+[connection signal="pressed" from="Control/Start" to="." method="_on_start_pressed"]

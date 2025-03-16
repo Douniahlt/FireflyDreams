@@ -1,0 +1,125 @@
+[gd_scene load_steps=12 format=3 uid="uid://dqp14cvokj4ao"]
+
+[ext_resource type="Script" path="res://nv1.gd" id="1_4qlwf"]
+[ext_resource type="Texture2D" uid="uid://bveddhx38wk6n" path="res://asset/Fond/fond 1.png" id="2_m3rr5"]
+[ext_resource type="Texture2D" uid="uid://bfamvxd3vt7xk" path="res://asset/Asset lumiere/light.png" id="3_mw2so"]
+[ext_resource type="PackedScene" uid="uid://o0rtqphyv0x4" path="res://scenes/Porte.tscn" id="4_c1gka"]
+[ext_resource type="PackedScene" uid="uid://c13xgnttokeh1" path="res://scenes/Lucioles.tscn" id="5_uydlc"]
+[ext_resource type="PackedScene" uid="uid://bi0wn87xetyp4" path="res://scenes/Personnage.tscn" id="9_125fj"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_um82e"]
+a = Vector2(227, 10)
+b = Vector2(-5, 10)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_utlbe"]
+a = Vector2(-3, 74)
+b = Vector2(-3, 13)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_81rs0"]
+a = Vector2(240, 10)
+b = Vector2(-5, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vcupv"]
+size = Vector2(78.0074, 20.2086)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_62lds"]
+size = Vector2(20.3649, 22.5814)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_4qlwf")
+
+[node name="niveau 1" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1591.0
+offset_bottom = 993.0
+
+[node name="Fond 1" type="Sprite2D" parent="niveau 1"]
+show_behind_parent = true
+position = Vector2(813.52, 481.72)
+scale = Vector2(5.35236, 5.28967)
+texture = ExtResource("2_m3rr5")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="niveau 1/Fond 1"]
+position = Vector2(-140.97, -69.3276)
+scale = Vector2(0.11, 0.1)
+color = Color(0.341176, 0.254902, 0.254902, 1)
+
+[node name="Chandelier 1" type="PointLight2D" parent="niveau 1/Fond 1"]
+position = Vector2(-91.2764, -52.4829)
+scale = Vector2(0.0514257, 0.051513)
+color = Color(0.482353, 0.0862745, 0.0862745, 1)
+texture = ExtResource("3_mw2so")
+
+[node name="chandelier 2" type="PointLight2D" parent="niveau 1/Fond 1"]
+position = Vector2(7.15137, -26.9268)
+scale = Vector2(0.0881207, 0.0804616)
+color = Color(0.560784, 0.0941176, 0.0941176, 1)
+texture = ExtResource("3_mw2so")
+
+[node name="chandelier 3" type="PointLight2D" parent="niveau 1/Fond 1"]
+position = Vector2(81.6749, -53.1326)
+scale = Vector2(0.0846589, 0.0690467)
+color = Color(0.517647, 0.101961, 0.101961, 1)
+texture = ExtResource("3_mw2so")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="niveau 1/Fond 1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="niveau 1/Fond 1/StaticBody2D"]
+position = Vector2(-118.647, 0.862061)
+shape = SubResource("SegmentShape2D_um82e")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="niveau 1/Fond 1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="niveau 1/Fond 1/StaticBody2D3"]
+position = Vector2(-119.581, 0.483963)
+shape = SubResource("SegmentShape2D_utlbe")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="niveau 1/Fond 1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="niveau 1/Fond 1/StaticBody2D4"]
+position = Vector2(-118.736, 66.9758)
+shape = SubResource("SegmentShape2D_81rs0")
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="niveau 1/Fond 1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="niveau 1/Fond 1/StaticBody2D5"]
+position = Vector2(-10.889, 8.47532)
+shape = SubResource("RectangleShape2D_vcupv")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="niveau 1/Fond 1/StaticBody2D5"]
+position = Vector2(-110.422, 8.23413)
+shape = SubResource("RectangleShape2D_62lds")
+
+[node name="Personnage" parent="." instance=ExtResource("9_125fj")]
+position = Vector2(289, 633)
+scale = Vector2(1.43, 1.43)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(810.81, 498.505)
+zoom = Vector2(0.835, 0.835)
+
+[node name="Area2D" parent="." instance=ExtResource("5_uydlc")]
+position = Vector2(592, 727)
+
+[node name="Area2D2" parent="." instance=ExtResource("5_uydlc")]
+position = Vector2(423, 427)
+type_lumiere = 1
+
+[node name="Area2D3" parent="." instance=ExtResource("5_uydlc")]
+position = Vector2(1051, 719)
+type_lumiere = 2
+
+[node name="Area2D4" parent="." instance=ExtResource("5_uydlc")]
+position = Vector2(1079, 445)
+type_lumiere = 2
+
+[node name="Area2D5" parent="." instance=ExtResource("4_c1gka")]
+position = Vector2(1497, 706)
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="Area2D2" to="." method="_on_area_2d_2_area_entered"]
+[connection signal="area_entered" from="Area2D3" to="." method="_on_area_2d_3_area_entered"]
+[connection signal="area_entered" from="Area2D4" to="." method="_on_area_2d_4_area_entered"]
+[connection signal="area_entered" from="Area2D5" to="." method="_on_area_2d_5_area_entered"]
+[connection signal="body_entered" from="Area2D5" to="." method="_on_area_2d_5_body_entered"]

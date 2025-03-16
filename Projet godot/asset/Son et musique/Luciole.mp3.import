@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cjr1urwvolh0v"
+path="res://.godot/imported/Luciole.mp3-6128f44c48f420c12043124e414a6cbf.mp3str"
+
+[deps]
+
+source_file="res://asset/Son et musique/Luciole.mp3"
+dest_files=["res://.godot/imported/Luciole.mp3-6128f44c48f420c12043124e414a6cbf.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcc1r63oqg05r"]
+
+[ext_resource type="Script" path="res://scripts/MusicManager.gd" id="1_gl5hu"]
+[ext_resource type="AudioStream" uid="uid://b12ec54qagylf" path="res://asset/Son et musique/projet_godot_v1.mp3" id="2_m4a7o"]
+
+[node name="MusicManager" type="Node"]
+script = ExtResource("1_gl5hu")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_m4a7o")

@@ -1,0 +1,138 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://asset/luciole/luciole 1.png" type="Texture2D" id=1]
+[ext_resource path="res://asset/Asset lumiere/light.png" type="Texture2D" id=2]
+
+[node name="Flèche de luciole" type="Sprite2D"]
+position = Vector2( 341.229, 31.429 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="lumière 1" type="PointLight2D" parent="."]
+texture = ExtResource( 2 )
+
+[node name="luciole 2" type="Sprite2D" parent="."]
+position = Vector2( 125.699, -143.057 )
+texture = ExtResource( 1 )
+
+[node name="luciole 3" type="Sprite2D" parent="."]
+position = Vector2( 246.189, -315.057 )
+texture = ExtResource( 1 )
+
+[node name="lumière 3" type="PointLight2D" parent="luciole 3"]
+position = Vector2( 9.73279, 9.74768 )
+texture = ExtResource( 2 )
+
+[node name="luciole 4" type="Sprite2D" parent="."]
+position = Vector2( 384.719, -190.159 )
+texture = ExtResource( 1 )
+
+[node name="luciole 5" type="Sprite2D" parent="."]
+position = Vector2( 543.826, -75.8542 )
+texture = ExtResource( 1 )
+
+[node name="lumière 5" type="PointLight2D" parent="luciole 5"]
+position = Vector2( 8.42529, 17.4862 )
+texture = ExtResource( 2 )
+
+[node name="luciole 6" type="Sprite2D" parent="."]
+position = Vector2( 719.177, 20.3669 )
+texture = ExtResource( 1 )
+
+[node name="luciole 7" type="Sprite2D" parent="."]
+position = Vector2( 826.933, -118.818 )
+texture = ExtResource( 1 )
+
+[node name="lumière 7" type="PointLight2D" parent="luciole 7"]
+position = Vector2( 8.17896, 11.062 )
+texture = ExtResource( 2 )
+
+[node name="luciole 8" type="Sprite2D" parent="."]
+position = Vector2( 921.22, -275.963 )
+texture = ExtResource( 1 )
+
+[node name="luciole 9" type="Sprite2D" parent="."]
+position = Vector2( 1011.02, -91.8794 )
+texture = ExtResource( 1 )
+
+[node name="lumière 9" type="PointLight2D" parent="luciole 9"]
+position = Vector2( 12.6687, 11.062 )
+texture = ExtResource( 2 )
+
+[node name="luciole 10" type="Sprite2D" parent="."]
+position = Vector2( 1069.38, 78.7349 )
+texture = ExtResource( 1 )
+
+[node name="luciole 11" type="Sprite2D" parent="."]
+position = Vector2( 1150.2, 285.268 )
+texture = ExtResource( 1 )
+
+[node name="lumière 11" type="PointLight2D" parent="luciole 11"]
+position = Vector2( -0.800781, 15.5519 )
+texture = ExtResource( 2 )
+
+[node name="luciole 12" type="Sprite2D" parent="."]
+position = Vector2( 1231.02, 473.842 )
+texture = ExtResource( 1 )
+
+[node name="luciole 13" type="Sprite2D" parent="."]
+position = Vector2( 1311.84, 662.415 )
+texture = ExtResource( 1 )
+
+[node name="lumière 13" type="PointLight2D" parent="luciole 13"]
+position = Vector2( -0.801025, -2.40771 )
+texture = ExtResource( 2 )
+
+[node name="luciole 14" type="Sprite2D" parent="."]
+position = Vector2( 1127.75, 684.864 )
+texture = ExtResource( 1 )
+
+[node name="luciole 15" type="Sprite2D" parent="."]
+position = Vector2( 952.648, 680.375 )
+texture = ExtResource( 1 )
+
+[node name="lumière 15" type="PointLight2D" parent="luciole 15"]
+position = Vector2( 8.17944, 2.0824 )
+texture = ExtResource( 2 )
+
+[node name="luciole 16" type="Sprite2D" parent="."]
+position = Vector2( 750.605, 680.375 )
+texture = ExtResource( 1 )
+
+[node name="luciole 17" type="Sprite2D" parent="."]
+position = Vector2( 512.643, 666.905 )
+texture = ExtResource( 1 )
+
+[node name="lumière 17" type="PointLight2D" parent="luciole 17"]
+position = Vector2( 3.68994, -6.89734 )
+texture = ExtResource( 2 )
+
+[node name="luciole 18" type="Sprite2D" parent="."]
+position = Vector2( 297.131, 644.456 )
+texture = ExtResource( 1 )
+
+[node name="luciole 19" type="Sprite2D" parent="."]
+position = Vector2( 400.397, 505.271 )
+texture = ExtResource( 1 )
+
+[node name="lumière 19" type="PointLight2D" parent="luciole 19"]
+position = Vector2( 8.17896, 2.08228 )
+texture = ExtResource( 2 )
+
+[node name="luciole 20" type="Sprite2D" parent="."]
+position = Vector2( 499.174, 352.616 )
+texture = ExtResource( 1 )
+
+[node name="luciole 21" type="Sprite2D" parent="."]
+position = Vector2( 348.784, 247.02 )
+texture = ExtResource( 1 )
+
+[node name="lumière 21" type="PointLight2D" parent="luciole 21"]
+position = Vector2( 1.42456, -0.0780029 )
+texture = ExtResource( 2 )
+
+[node name="luciole 22" type="Sprite2D" parent="."]
+position = Vector2( 155.888, 116.92 )
+texture = ExtResource( 1 )

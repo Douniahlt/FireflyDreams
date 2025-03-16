@@ -1,0 +1,56 @@
+[gd_scene load_steps=7 format=3 uid="uid://c13xgnttokeh1"]
+
+[ext_resource type="Script" path="res://scenes/luciole.gd" id="1_qay0r"]
+[ext_resource type="Texture2D" uid="uid://dyc6whneaxcb2" path="res://asset/luciole/luciole 1.png" id="2_0smdq"]
+[ext_resource type="Texture2D" uid="uid://bfamvxd3vt7xk" path="res://asset/Asset lumiere/light.png" id="3_ktso7"]
+[ext_resource type="Texture2D" uid="uid://cug6y03udsvtc" path="res://asset/luciole/luciole2.png" id="4_ps7n4"]
+[ext_resource type="Texture2D" uid="uid://clmtwb3ahul84" path="res://asset/luciole/luciole3.png" id="5_gma1e"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wq58i"]
+
+[node name="Area2D" type="Area2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_qay0r")
+
+[node name="Luciole" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(-1.1256, -0.140924)
+scale = Vector2(0.235, 0.235)
+texture = ExtResource("2_0smdq")
+
+[node name="PointLight2D" type="PointLight2D" parent="Luciole"]
+position = Vector2(4.56002, -1.29309)
+scale = Vector2(0.851064, 0.851064)
+texture = ExtResource("3_ktso7")
+
+[node name="Luciole2" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(-1.1256, -0.140924)
+scale = Vector2(0.235, 0.235)
+texture = ExtResource("4_ps7n4")
+
+[node name="PointLight2D" type="PointLight2D" parent="Luciole2"]
+texture = ExtResource("3_ktso7")
+
+[node name="PointLight2D2" type="PointLight2D" parent="Luciole2"]
+texture = ExtResource("3_ktso7")
+
+[node name="Luciole3" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(-1.1256, -0.140924)
+scale = Vector2(0.235, 0.235)
+texture = ExtResource("5_gma1e")
+
+[node name="PointLight2D" type="PointLight2D" parent="Luciole3"]
+texture = ExtResource("3_ktso7")
+
+[node name="PointLight2D2" type="PointLight2D" parent="Luciole3"]
+texture = ExtResource("3_ktso7")
+
+[node name="PointLight2D3" type="PointLight2D" parent="Luciole3"]
+position = Vector2(3.89523, -1.18946)
+texture = ExtResource("3_ktso7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_wq58i")

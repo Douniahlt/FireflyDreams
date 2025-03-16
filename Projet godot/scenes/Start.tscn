@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://asset/Bouton start/start1.png" type="Texture2D" id=1]
+[ext_resource path="res://asset/Bouton start/start.png" type="Texture2D" id=3]
+
+[node name="Start" type="TextureButton"]
+anchor_left = 0.04
+anchor_top = 0.207
+anchor_right = 0.131
+anchor_bottom = 0.312
+offset_left = 8.90514
+offset_top = 12.9094
+offset_right = -12.2789
+offset_bottom = -14.0906
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

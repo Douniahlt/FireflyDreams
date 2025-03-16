@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://asset/Asset lumiere/light.png" type="Texture2D" id=1]
+[ext_resource path="res://asset/luciole/luciole3.png" type="Texture2D" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 33.485, 94.4389 )
+
+[node name="Luciole 4" type="Area2D"]
+position = Vector2( 0.353546, 0.353546 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Luciole" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2( -3.74574, 2.24735 )
+scale = Vector2( 0.296713, 0.329705 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -3.53554, 72.2076 )
+shape = SubResource( 1 )
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2( 0.468781, -0.0782776 )
+scale = Vector2( 0.406951, 0.424177 )
+texture = ExtResource( 1 )
+
+[connection signal="body_entered" from="." to="." method="_on_Luciole_4_body_entered"]

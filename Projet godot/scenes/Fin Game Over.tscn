@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dojk2ky7s7wvr"]
+
+[ext_resource type="Script" path="res://scenes/Fin Game Over.gd" id="1_cotfv"]
+[ext_resource type="Texture2D" uid="uid://da4w7r10l3kxf" path="res://asset/Cinématique/cinématique fin 2.png" id="2_q644y"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(35.0412, 292.292)
+
+[node name="Fin Game Over" type="Area2D"]
+position = Vector2(433.997, -335.005)
+script = ExtResource("1_cotfv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("1")
+
+[node name="image Game over" type="Sprite2D" parent="."]
+position = Vector2(171.003, 654.005)
+scale = Vector2(3.07931, 2.95929)
+texture = ExtResource("2_q644y")

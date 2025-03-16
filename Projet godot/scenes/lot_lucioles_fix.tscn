@@ -1,0 +1,74 @@
+[gd_scene load_steps=7 format=3 uid="uid://6ds7jo0gt148"]
+
+[ext_resource type="Texture2D" uid="uid://ikfllqepvcpo" path="res://asset/luciole/luciole.png" id="1_hnbno"]
+[ext_resource type="Texture2D" uid="uid://dyc6whneaxcb2" path="res://asset/luciole/luciole 1.png" id="2_o1llv"]
+[ext_resource type="Texture2D" uid="uid://cug6y03udsvtc" path="res://asset/luciole/luciole2.png" id="3_1dcy2"]
+[ext_resource type="Texture2D" uid="uid://clmtwb3ahul84" path="res://asset/luciole/luciole3.png" id="4_yuhhd"]
+[ext_resource type="Texture2D" uid="uid://bfamvxd3vt7xk" path="res://asset/Asset lumiere/light.png" id="5_lwfm1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h4dku"]
+size = Vector2(48.8441, 19.6047)
+
+[node name="Area2D" type="Area2D"]
+collision_layer = 3
+collision_mask = 3
+
+[node name="luciole" type="Sprite2D" parent="."]
+position = Vector2(0.477048, -0.123016)
+scale = Vector2(0.0440527, 0.0305955)
+texture = ExtResource("1_hnbno")
+
+[node name="luciole 1" type="Sprite2D" parent="luciole"]
+position = Vector2(-62.6961, 80.0006)
+scale = Vector2(0.600255, 0.686845)
+texture = ExtResource("2_o1llv")
+
+[node name="luciole 2" type="Sprite2D" parent="luciole"]
+position = Vector2(-255.378, 194.047)
+texture = ExtResource("3_1dcy2")
+
+[node name="luciole 3" type="Sprite2D" parent="luciole"]
+position = Vector2(187.61, 17.9755)
+scale = Vector2(0.442293, 0.477805)
+texture = ExtResource("2_o1llv")
+
+[node name="luciole 4" type="Sprite2D" parent="luciole"]
+position = Vector2(173.204, -142.089)
+texture = ExtResource("4_yuhhd")
+
+[node name="luciole 5" type="Sprite2D" parent="luciole"]
+position = Vector2(234.43, 212.054)
+rotation = -2.71747
+scale = Vector2(0.676598, 0.71417)
+texture = ExtResource("4_yuhhd")
+
+[node name="luciole 6" type="Sprite2D" parent="luciole"]
+position = Vector2(-716.373, -112.077)
+scale = Vector2(0.887333, 0.813516)
+texture = ExtResource("3_1dcy2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 2.5)
+rotation = 0.208034
+scale = Vector2(1.0036, 0.996996)
+shape = SubResource("RectangleShape2D_h4dku")
+
+[node name="lumière 1" type="PointLight2D" parent="."]
+position = Vector2(-26.5549, 0.695301)
+scale = Vector2(0.0487162, 0.0534009)
+texture = ExtResource("5_lwfm1")
+
+[node name="lumière 2" type="PointLight2D" parent="."]
+position = Vector2(-12.8688, 2.58306)
+scale = Vector2(0.0487162, 0.0534009)
+texture = ExtResource("5_lwfm1")
+
+[node name="lumière 3" type="PointLight2D" parent="."]
+position = Vector2(6.95258, -2.84421)
+scale = Vector2(0.0487162, 0.0534009)
+texture = ExtResource("5_lwfm1")
+
+[node name="lumière 4" type="PointLight2D" parent="."]
+position = Vector2(22.9985, 2.11112)
+scale = Vector2(0.0487162, 0.0534009)
+texture = ExtResource("5_lwfm1")

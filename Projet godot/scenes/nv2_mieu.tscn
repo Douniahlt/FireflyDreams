@@ -1,0 +1,168 @@
+[gd_scene load_steps=19 format=3 uid="uid://c8qa71cg8q53a"]
+
+[ext_resource type="Texture2D" uid="uid://cvjvu1yfhr6vm" path="res://asset/Fond/fond 2.png" id="1_6g3n1"]
+[ext_resource type="Script" path="res://scenes/nv2_mieu.gd" id="1_jy8vs"]
+[ext_resource type="PackedScene" uid="uid://c13xgnttokeh1" path="res://scenes/Lucioles.tscn" id="4_6055l"]
+[ext_resource type="PackedScene" uid="uid://cx62j0mhwwelc" path="res://scenes/lot_lucioles2.tscn" id="5_e8n5w"]
+[ext_resource type="Texture2D" uid="uid://dbk16l02doiuu" path="res://asset/porte/porte 2.png" id="6_g4s2p"]
+[ext_resource type="PackedScene" uid="uid://6ds7jo0gt148" path="res://scenes/lot_lucioles_fix.tscn" id="6_vnlnw"]
+[ext_resource type="PackedScene" uid="uid://c8v2ynvfwr1xu" path="res://scenes/lot_lucioles3.tscn" id="7_khx4n"]
+[ext_resource type="PackedScene" uid="uid://bi0wn87xetyp4" path="res://scenes/Personnage.tscn" id="7_q66pj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w58v6"]
+size = Vector2(20, 823.98)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8bd61"]
+size = Vector2(1288.35, 13.8943)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o3fq4"]
+size = Vector2(16.7222, 804.338)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c00yn"]
+size = Vector2(1291.71, 23.9862)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lteb5"]
+size = Vector2(973.992, 19.7405)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uj608"]
+size = Vector2(300.814, 18.5001)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7pjic"]
+size = Vector2(69.0588, 446.622)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mixmc"]
+radius = 50.643
+height = 101.286
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g8p3q"]
+radius = 70.0
+height = 140.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v3h1o"]
+size = Vector2(154.09, 265.13)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_jy8vs")
+
+[node name="niveau 2" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1535.0
+offset_bottom = 960.0
+
+[node name="Fond 2" type="Sprite2D" parent="niveau 2"]
+show_behind_parent = true
+position = Vector2(764.363, 479.34)
+scale = Vector2(5.35874, 5.31139)
+texture = ExtResource("1_6g3n1")
+
+[node name="Bord 1" type="StaticBody2D" parent="niveau 2"]
+position = Vector2(110, 487.4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="niveau 2/Bord 1"]
+position = Vector2(1.5874, -1.5874)
+shape = SubResource("RectangleShape2D_w58v6")
+
+[node name="Bord 2" type="StaticBody2D" parent="niveau 2"]
+position = Vector2(764.423, 67)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="niveau 2/Bord 2"]
+position = Vector2(0.00012207, 1.68164)
+shape = SubResource("RectangleShape2D_8bd61")
+
+[node name="Bord 3" type="StaticBody2D" parent="niveau 2"]
+position = Vector2(1415.27, 473.99)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="niveau 2/Bord 3"]
+shape = SubResource("RectangleShape2D_o3fq4")
+
+[node name="Bord 4" type="StaticBody2D" parent="niveau 2"]
+position = Vector2(767.783, 889.392)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="niveau 2/Bord 4"]
+position = Vector2(0, -1.68176)
+shape = SubResource("RectangleShape2D_c00yn")
+
+[node name="Ligne imaginaire 4" type="StaticBody2D" parent="niveau 2"]
+position = Vector2(785, 529)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="niveau 2/Ligne imaginaire 4"]
+position = Vector2(-173.996, -0.000244141)
+shape = SubResource("RectangleShape2D_lteb5")
+
+[node name="ligne imaginaire 5" type="StaticBody2D" parent="niveau 2"]
+position = Vector2(1016, 588)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="niveau 2/ligne imaginaire 5"]
+position = Vector2(-0.000244141, 2.82861)
+shape = SubResource("RectangleShape2D_uj608")
+
+[node name="Arbre" type="StaticBody2D" parent="niveau 2"]
+position = Vector2(979.403, 596.828)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="niveau 2/Arbre"]
+polygon = PackedVector2Array(-20.105, -110.468, -22.23, -113.218, -20.23, -112.218, -20.105, -112.718, -20.23, -113.218, -20.23, -171.218, -19.2468, -183.703, -20.1377, -339.61, -9.4469, -338.719, -9.4469, -377.919, -2.3197, -378.81, 1.2439, -400.191, 10.1528, -401.082, 13.7166, -424.245, 21.7346, -424.245, 23.5164, -444.736, 31.5344, -446.518, 33.3162, -457.209, 41.3344, -456.318, 43.1162, -407.318, 50.2434, -407.318, 52.916, -434.936, 59.1523, -436.718, 60.9341, -458.991, 69.843, -459.881, 72.5159, -476.809, 78.7521, -476.809, 84.0974, -493.736, 91.2246, -495.517, 91.2246, -521.354, -855.229, -519.632, -855.229, -330.632, -845.229, -330.632, -845.229, -342.632, -830.229, -338.632, -826.229, -331.632, -809.229, -330.632, -808.229, -313.632, -768.229, -309.632, -767.229, -285.632, -743.229, -280.632, -740.229, -267.632, -722.229, -181.632, -714.483, -124.56, -714.73, -104.718, -714.483, -118.203, -724.23, -24.2178, -556.23, -21.2178, -556.23, -127.218, -526.23, -203.218, -503.23, -250.218, -446.229, -286.632, -418.229, -323.632, -396.229, -272.632, -389.229, -283.632, -382.229, -318.632, -362.229, -349.632, -345.229, -375.632, -335.229, -377.632, -323.229, -368.632, -322.229, -333.632, -310.229, -316.632, -294.229, -308.632, -292.229, -342.632, -283.229, -339.632, -280.229, -365.632, -269.229, -376.632, -259.229, -367.632, -251.229, -338.632, -241.229, -303.632, -240.229, -256.632, -228.229, -257.632, -226.229, -296.632, -216.229, -302.632, -218.229, -329.632, -207.229, -329.632, -207.229, -338.632, -198.229, -341.632, -189.229, -376.632, -186.229, -375.632, -181.229, -316.632, -172.229, -316.632, -169.229, -329.632, -161.229, -328.632, -158.229, -354.632, -151.229, -351.632, -147.229, -379.632, -130.229, -377.632, -124.229, -352.632, -110.229, -339.632, -92.2292, -309.632, -93.2292, -311.632, -84.2292, -299.632, -80.2292, -208.632, -69.2292, -203.632, -68.2292, -121.632, -68.48, -118.218, -68.355, -117.093, -70.23, -111.218, -63.23, -111.218, -61.98, -112.093, -57.23, -111.218, -48.23, -110.218, -36.23, -109.218)
+
+[node name="mur 5" type="StaticBody2D" parent="niveau 2"]
+position = Vector2(1144, 549)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="niveau 2/mur 5"]
+position = Vector2(-0.0839882, -84.2416)
+shape = SubResource("RectangleShape2D_7pjic")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="niveau 2"]
+position = Vector2(310, 635)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="niveau 2/StaticBody2D"]
+position = Vector2(-67, -35)
+rotation = 1.72439
+shape = SubResource("CapsuleShape2D_mixmc")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="niveau 2"]
+position = Vector2(899, 577)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="niveau 2/StaticBody2D2"]
+position = Vector2(10, 1)
+rotation = 0.197222
+shape = SubResource("CapsuleShape2D_g8p3q")
+
+[node name="Porte2" type="Area2D" parent="niveau 2"]
+position = Vector2(1273, 577)
+
+[node name="Porte" type="Sprite2D" parent="niveau 2/Porte2"]
+scale = Vector2(5.19264, 5.28739)
+texture = ExtResource("6_g4s2p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="niveau 2/Porte2"]
+shape = SubResource("RectangleShape2D_v3h1o")
+
+[node name="Personnage" parent="niveau 2" instance=ExtResource("7_q66pj")]
+position = Vector2(275, 688)
+scale = Vector2(1.385, 1.385)
+
+[node name="Area2D" parent="niveau 2" instance=ExtResource("4_6055l")]
+position = Vector2(694, 404)
+
+[node name="Area2D2" parent="niveau 2" instance=ExtResource("6_vnlnw")]
+position = Vector2(548, 743)
+scale = Vector2(5.15, 5.15)
+
+[node name="Area2D3" parent="niveau 2" instance=ExtResource("5_e8n5w")]
+position = Vector2(765, 746)
+scale = Vector2(0.875, 0.875)
+
+[node name="Area2D4" parent="niveau 2" instance=ExtResource("7_khx4n")]
+position = Vector2(1020, 720)
+rotation = 0.146679
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(755, 491)
+zoom = Vector2(0.855, 0.855)
+
+[connection signal="body_entered" from="niveau 2/Porte2" to="." method="_on_porte_2_body_entered"]
+[connection signal="area_entered" from="niveau 2/Area2D2" to="." method="_on_area_2d_3_area_entered"]
+[connection signal="body_entered" from="niveau 2/Area2D2" to="." method="_on_area_2d_2_body_entered"]
+[connection signal="area_entered" from="niveau 2/Area2D3" to="." method="_on_area_2d_2_area_entered"]
+[connection signal="body_entered" from="niveau 2/Area2D3" to="." method="_on_area_2d_3_body_entered"]
+[connection signal="area_entered" from="niveau 2/Area2D4" to="." method="_on_area_2d_4_area_entered"]
+[connection signal="body_entered" from="niveau 2/Area2D4" to="." method="_on_area_2d_4_body_entered"]

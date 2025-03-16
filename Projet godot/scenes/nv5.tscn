@@ -1,0 +1,127 @@
+[gd_scene load_steps=11 format=3 uid="uid://c4l3gcbfbnrgg"]
+
+[ext_resource type="Script" path="res://scenes/nv5.gd" id="1_a8iq5"]
+[ext_resource type="Texture2D" uid="uid://bveddhx38wk6n" path="res://asset/Fond/fond 1.png" id="1_rakhy"]
+[ext_resource type="Texture2D" uid="uid://bfamvxd3vt7xk" path="res://asset/Asset lumiere/light.png" id="2_bhb1s"]
+[ext_resource type="PackedScene" uid="uid://bi0wn87xetyp4" path="res://scenes/Personnage.tscn" id="3_unoe6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_12cc0"]
+size = Vector2(7.10148, 153.414)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sowjg"]
+size = Vector2(240.394, 7.11076)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oosve"]
+size = Vector2(1117.46, 22.5704)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lwfx8"]
+size = Vector2(383.332, 124.974)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vfeb2"]
+size = Vector2(148.072, 39)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vwvsq"]
+size = Vector2(79, 147)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_a8iq5")
+
+[node name="niveau 5" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 3339.0
+offset_bottom = 952.0
+
+[node name="Fond 5" type="Sprite2D" parent="niveau 5"]
+modulate = Color(0.192157, 0.180392, 0.180392, 1)
+show_behind_parent = true
+position = Vector2(726.46, 485.501)
+scale = Vector2(5.35236, 5.28967)
+texture = ExtResource("1_rakhy")
+
+[node name="Chandelier 1" type="PointLight2D" parent="niveau 5/Fond 5"]
+position = Vector2(-91.2764, -52.4829)
+scale = Vector2(0.0514257, 0.051513)
+color = Color(0.503906, 0.125977, 0.125977, 1)
+texture = ExtResource("2_bhb1s")
+
+[node name="chandelier 2" type="PointLight2D" parent="niveau 5/Fond 5"]
+position = Vector2(7.15137, -26.9268)
+scale = Vector2(0.0881207, 0.0804616)
+color = Color(0.560784, 0.0941176, 0.0941176, 1)
+texture = ExtResource("2_bhb1s")
+
+[node name="chandelier 3" type="PointLight2D" parent="niveau 5/Fond 5"]
+position = Vector2(81.6749, -53.1326)
+scale = Vector2(0.0846589, 0.0690467)
+color = Color(0.517647, 0.101961, 0.101961, 1)
+texture = ExtResource("2_bhb1s")
+
+[node name="mur 7" type="StaticBody2D" parent="niveau 5"]
+position = Vector2(1396.26, 569.872)
+scale = Vector2(5.35236, 5.28967)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="niveau 5/mur 7"]
+position = Vector2(-1.77746, -16.4463)
+shape = SubResource("RectangleShape2D_12cc0")
+
+[node name="mur 8" type="StaticBody2D" parent="niveau 5"]
+position = Vector2(71, 569.872)
+scale = Vector2(5.35236, 5.28967)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="niveau 5/mur 8"]
+position = Vector2(-1.77746, -16.4463)
+shape = SubResource("RectangleShape2D_12cc0")
+
+[node name="mur 9" type="StaticBody2D" parent="niveau 5"]
+position = Vector2(725.96, 75)
+scale = Vector2(5.35236, 5.28967)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="niveau 5/mur 9"]
+position = Vector2(-1.33313, -1.57372)
+shape = SubResource("RectangleShape2D_sowjg")
+
+[node name="mur 10" type="StaticBody2D" parent="niveau 5"]
+position = Vector2(732.68, 895.715)
+scale = Vector2(5.35236, 5.28967)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="niveau 5/mur 10"]
+position = Vector2(-1.33313, -1.57372)
+shape = SubResource("RectangleShape2D_sowjg")
+
+[node name="ligne imaginaire 13" type="StaticBody2D" parent="niveau 5"]
+position = Vector2(720, 435)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="niveau 5/ligne imaginaire 13"]
+position = Vector2(44.5117, 2)
+shape = SubResource("RectangleShape2D_oosve")
+
+[node name="ligne imaginaire 14" type="StaticBody2D" parent="niveau 5"]
+position = Vector2(652, 560)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="niveau 5/ligne imaginaire 14"]
+position = Vector2(2.33422, -44)
+shape = SubResource("RectangleShape2D_lwfx8")
+
+[node name="ligne imaginaire 15" type="StaticBody2D" parent="niveau 5"]
+position = Vector2(164, 522)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="niveau 5/ligne imaginaire 15"]
+position = Vector2(1.33484, -6.67419)
+shape = SubResource("RectangleShape2D_vfeb2")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(112, 683)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(29.5, 63.5)
+shape = SubResource("RectangleShape2D_vwvsq")
+
+[node name="Personnage" parent="." instance=ExtResource("3_unoe6")]
+position = Vector2(1259, 698)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(723, 481)
+zoom = Vector2(0.825, 0.825)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

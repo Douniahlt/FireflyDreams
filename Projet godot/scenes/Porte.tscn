@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://o0rtqphyv0x4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aq1rg"]
+size = Vector2(192.107, 331.552)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wiyfn"]
+size = Vector2(164.053, 284.776)
+
+[node name="Area2D" type="Area2D"]
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_aq1rg")
+
+[node name="Porte3" type="Sprite2D" parent="."]
+show_behind_parent = true
+scale = Vector2(6.15127, 5.3632)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_wiyfn")

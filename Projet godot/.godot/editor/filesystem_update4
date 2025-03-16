@@ -1,0 +1,31 @@
+res://scenes/Main.tscn
+res://default_env.tres
+res://scenes/Personnage.tscn
+res://scenes/Main.gd
+res://scripts/Personnage.gd
+res://nv1.gd
+res://scenes/Luciole 1.tscn
+res://scenes/luciole.tscn
+res://scenes/luciole.gd
+res://scenes/niveau1.tscn
+res://scenes/Porte.tscn
+res://scenes/Lucioles.tscn
+res://scenes/nv2_mieu.tscn
+res://scenes/Porte2.tscn
+res://scenes/nv2_mieu.gd
+res://scenes/lot_lucioles_fix.tscn
+res://scenes/lot_lucioles2.tscn
+res://scenes/lot_lucioles3.tscn
+res://scenes/nv3.tscn
+res://scenes/nv3.gd
+res://scenes/Fin Game Over.tscn
+res://scenes/cinematique_fin.tscn
+res://scenes/cinematique_fin.gd
+res://scenes/Fin Game Over.gd
+res://scenes/nv4.gd
+res://scenes/nv5.gd
+res://scenes/nv5.tscn
+res://scenes/nv4.tscn
+res://scripts/MusicManager.gd
+res://scenes/MusicManager .tscn
+res://scenes/MusicManager.tscn

@@ -1,0 +1,109 @@
+[gd_scene load_steps=7 format=3 uid="uid://c8v2ynvfwr1xu"]
+
+[ext_resource type="Texture2D" uid="uid://ikfllqepvcpo" path="res://asset/luciole/luciole.png" id="1_ony6e"]
+[ext_resource type="Texture2D" uid="uid://dyc6whneaxcb2" path="res://asset/luciole/luciole 1.png" id="2_o88hv"]
+[ext_resource type="Texture2D" uid="uid://cug6y03udsvtc" path="res://asset/luciole/luciole2.png" id="3_xpa12"]
+[ext_resource type="Texture2D" uid="uid://clmtwb3ahul84" path="res://asset/luciole/luciole3.png" id="4_cngvg"]
+[ext_resource type="Texture2D" uid="uid://bfamvxd3vt7xk" path="res://asset/Asset lumiere/light.png" id="5_l0psh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x5shp"]
+size = Vector2(371, 59)
+
+[node name="Area2D" type="Area2D"]
+collision_layer = 3
+collision_mask = 3
+
+[node name="luciole" type="Sprite2D" parent="."]
+position = Vector2(6.29961, 1.25992)
+scale = Vector2(0.216658, 0.213606)
+texture = ExtResource("1_ony6e")
+
+[node name="luciole 1" type="Sprite2D" parent="luciole"]
+position = Vector2(914.335, -96.9323)
+scale = Vector2(0.2926, 0.308913)
+texture = ExtResource("2_o88hv")
+
+[node name="luciole 2" type="Sprite2D" parent="luciole"]
+position = Vector2(749.517, -110.173)
+rotation = 1.28322
+scale = Vector2(0.860114, 0.615873)
+texture = ExtResource("3_xpa12")
+
+[node name="luciole 3" type="Sprite2D" parent="luciole"]
+position = Vector2(847.428, -90.3117)
+scale = Vector2(0.492999, 0.555951)
+texture = ExtResource("2_o88hv")
+
+[node name="luciole 4" type="Sprite2D" parent="luciole"]
+position = Vector2(852.324, -32.381)
+scale = Vector2(0.407114, 0.383024)
+texture = ExtResource("2_o88hv")
+
+[node name="luciole 5" type="Sprite2D" parent="luciole"]
+position = Vector2(232.759, -118.503)
+rotation = 2.32988
+texture = ExtResource("4_cngvg")
+
+[node name="luciole 6" type="Sprite2D" parent="luciole"]
+position = Vector2(-71.3041, 103.343)
+rotation = 0.211144
+scale = Vector2(0.903074, 0.89774)
+texture = ExtResource("3_xpa12")
+
+[node name="luciole 7" type="Sprite2D" parent="luciole"]
+position = Vector2(-702.831, 8.99802)
+scale = Vector2(0.435743, 0.506544)
+texture = ExtResource("2_o88hv")
+
+[node name="luciole 8" type="Sprite2D" parent="luciole"]
+position = Vector2(646.675, -17.1559)
+rotation = 0.211144
+scale = Vector2(0.520296, 0.5426)
+texture = ExtResource("4_cngvg")
+
+[node name="luciole 9" type="Sprite2D" parent="luciole"]
+position = Vector2(-670.194, -72.1048)
+scale = Vector2(0.664775, 0.753582)
+texture = ExtResource("2_o88hv")
+
+[node name="luciole 10" type="Sprite2D" parent="luciole"]
+position = Vector2(-781.16, -77.0704)
+scale = Vector2(0.77929, 0.877101)
+texture = ExtResource("2_o88hv")
+
+[node name="luciole 11" type="Sprite2D" parent="luciole"]
+position = Vector2(762.572, 15.6187)
+scale = Vector2(1.06558, 0.951214)
+texture = ExtResource("2_o88hv")
+
+[node name="luciole 12" type="Sprite2D" parent="luciole"]
+position = Vector2(379.087, -22.45)
+scale = Vector2(0.571419, 0.716392)
+texture = ExtResource("3_xpa12")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-2.43146, -1.41425, 4.63959, -9.19241, 24.4386, -23.3346, 41.4091, -37.4767, 53.43, -60.1041, 66.865, -52.3259, 86.664, -36.0625, 91.6137, -16.2635, 109.291, -23.3346, 133.333, -16.2635, 145.354, -17.6777, 161.617, -27.5772, 182.831, -33.9412, 202.63, -26.8701, 213.236, -19.0919, 178.588, 16.9705, 158.082, 14.1421, 146.768, 27.5771, 130.505, 24.0416, 92.3208, 23.3345, 54.1371, 33.234, 15.2462, 37.4766, -17.9878, 43.8406, -34.2513, 31.1127, -71.0208, 38.1837, -113.447, 34.6482, -168.602, -4.24268, -173.551, -23.3346, -155.874, -25.4559, -128.296, -25.4559, -101.426, -21.2132, -78.0919, -12.728, -47.6863, -16.2635, -14.4523, -12.728)
+
+[node name="lumière 1" type="PointLight2D" parent="."]
+position = Vector2(-120.323, -1.25986)
+scale = Vector2(0.390956, 0.3725)
+texture = ExtResource("5_l0psh")
+
+[node name="lumière 2" type="PointLight2D" parent="."]
+position = Vector2(1.88989, 16.379)
+scale = Vector2(0.390956, 0.3725)
+texture = ExtResource("5_l0psh")
+
+[node name="lumière 3" type="PointLight2D" parent="."]
+position = Vector2(100.164, -5.0397)
+scale = Vector2(0.390956, 0.3725)
+texture = ExtResource("5_l0psh")
+
+[node name="lumière 4" type="PointLight2D" parent="."]
+position = Vector2(202.217, -12.5993)
+scale = Vector2(0.390956, 0.3725)
+texture = ExtResource("5_l0psh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(27.5, 4.5)
+shape = SubResource("RectangleShape2D_x5shp")
